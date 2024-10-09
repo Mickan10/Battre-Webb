@@ -13,7 +13,6 @@ body
     background-image: url(photos/bakground1.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    line-height: 1.6;
     border: 0.5px solid #000000;
 }
 
@@ -21,32 +20,38 @@ body
 header 
 {
     display: flex;
-    background-color: #ffffff;
+    background-color: #ffffff8f;
     color: #000000;
-    padding: 20px;
+    padding: 30px;
     position: fixed;
-    top: 0;
     z-index: 1000;
     width: 100%;
     box-shadow: 0 4px 5px rgb(87, 85, 85);
 }
 
 
-header nav ul li 
+header nav ul
 {
     display: inline;
-    margin-right: 20px;
 }
 
-header nav ul li a 
+header nav ul a 
 {
     color: #000000;
     text-decoration: none;
+    margin: 20px;
+    font-size: larger;
+}
+
+header nav ul a:hover
+{
+    
 }
 
 h4
 {
     margin-right: 80px;
+    font-size: larger;
 }
 
 /* main */
@@ -60,7 +65,7 @@ p
     margin: 6px;
 }
 
-/* text boxar */
+/* textboxar */
 .container 
 { 
     display: flex;
@@ -70,38 +75,67 @@ p
 /* textbox till vänster */
 .box1
 {
-    background-color: #dddbdb5d;
+    background-color: #dddbdb79;
     padding: 20px; 
     border-radius: 8px; 
     box-shadow: 0 4px 8px rgba(236, 236, 236, 0.493);
-    max-width: 600px; /* Maximal bredd på boxen */
-    margin: 100px 20px 200px 50px; /* Centrerar boxen på sidan */
+    max-width: 600px; 
+    margin: 200px 20px 150px 50px;
+    line-height: 1.5;
     
+}
+
+/*  knapp till föreläsare-site */
+.button-forelasare {
+    background-color: #3273b852; 
+    color: white;
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 0 0 0 rgba(36, 35, 35, 0.493);
+}
+
+.button-forelasare:hover {
+    background-color: #04172c; 
+    cursor: pointer;
 }
 
 /* scrollbar */
 .scroll-container {
     display: flex;
-    overflow-x: auto;
-    white-space: nowrap;
+    overflow-x: scroll;
     padding: 20px;
+    background-color: #ffffff6c;
 }
 
 .scroll-item {
     display: inline-block;
     width: 300px;
-    margin-right: 20px;
+    margin-right: 17px;
     background-color: #ffffff85;
     padding: 10px;
     box-shadow: 0 4px 8px rgba(230, 230, 230, 0.1);
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(236, 236, 236, 0.493);
+}
+
+.scroll-item:hover 
+{
+    display: block;
+    margin-bottom: 10px;
+    transform: scale(1.1);
 }
 
 .scroll-item img {
-    height: 140px;
+    max-height: 200px;
     display: block;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    border: 0.1px rgb(139, 132, 132) solid;
+    border-radius: 5px;
+}
+
+.scroll-item p
+{
+    color: #222121;
 }
 
 /* Footer */
