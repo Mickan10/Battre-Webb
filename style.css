@@ -16,7 +16,7 @@ body
     border: 0.5px solid #000000;
 }
 
-/* Header */
+/* Header, logo, meny*/
 header 
 {
     display: flex;
@@ -40,14 +40,21 @@ header nav ul a
     color: #000000;
     text-decoration: none;
     margin: 20px;
-    font-size: larger;
+    font-size: medium;
+    padding: 10px;
 }
 
 header nav ul a:hover
 {
-    
+    background-color: #04172cb2;
+    color: white;
+    font-size: large;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 5px rgb(87, 85, 85);
 }
 
+/* h4 ska bytas ut mot logo */
 h4
 {
     margin-right: 80px;
@@ -76,17 +83,35 @@ p
 .box1
 {
     background-color: #dddbdb79;
-    padding: 20px; 
+    padding: 50px 50px 60px 50px; 
     border-radius: 8px; 
     box-shadow: 0 4px 8px rgba(236, 236, 236, 0.493);
     max-width: 600px; 
     margin: 200px 20px 150px 50px;
     line-height: 1.5;
-    
 }
 
-/*  knapp till föreläsare-site */
-.button-forelasare {
+/* knapp till anmälan */
+.button-anmalan 
+{
+    background-color: #04172c88; 
+    color: white;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 1px 0 0 0 rgba(36, 35, 35, 0.493);
+}
+
+.button-anmalan:hover
+{
+    background-color: #04172cc0; 
+    cursor: pointer;
+}
+
+/*  knapp föreläsare-site eller länka till schema? */
+.button-forelasare 
+{
     background-color: #3273b852; 
     color: white;
     padding: 15px 30px;
@@ -95,20 +120,23 @@ p
     box-shadow: 1px 0 0 0 rgba(36, 35, 35, 0.493);
 }
 
-.button-forelasare:hover {
-    background-color: #04172c; 
+.button-forelasare:hover 
+{
+    background-color: #04172c3f; 
     cursor: pointer;
 }
 
 /* scrollbar */
-.scroll-container {
+.scroll-container 
+{
     display: flex;
     overflow-x: scroll;
     padding: 20px;
     background-color: #ffffff6c;
 }
 
-.scroll-item {
+.scroll-item 
+{
     display: inline-block;
     width: 300px;
     margin-right: 17px;
@@ -125,7 +153,8 @@ p
     transform: scale(1.1);
 }
 
-.scroll-item img {
+.scroll-item img 
+{
     max-height: 200px;
     display: block;
     margin-bottom: 10px;
