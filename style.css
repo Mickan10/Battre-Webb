@@ -43,6 +43,11 @@ header nav ul li a
     text-decoration: none;
 }
 
+img
+{
+    margin-right: 100px;
+}
+
 /* main */
 main
 {
@@ -53,7 +58,7 @@ main
 .container 
 { 
     background-color: wheat;
-    
+
 }
 
 /* Footer */
@@ -108,6 +113,7 @@ footer
 .social-icons a:hover 
 {
     color: #549fc2;
+    
 }
 
 /* Footer botten */
