@@ -96,7 +96,7 @@ p
 {
     background-color: #04172c88; 
     color: white;
-    padding: 15px 30px;
+    padding: 10px 60px;
     margin: 10px;
     font-size: 18px;
     border-radius: 5px;
@@ -226,4 +226,39 @@ footer
     padding-top: 10px;
     border-top: 1px solid #c0b7b7;
     font-size: 13px;
+}
+
+@media only screen and (max-width: 480px) {
+    header {
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    header nav ul a {
+        font-size: small;
+        margin: 5px;
+    }
+
+    .box1 {
+        margin: 80px 10px;
+        padding: 20px;
+    }
+
+    .button-anmalan, .button-forelasare {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .scroll-item {
+        width: 200px;
+    }
+
+    .footer-column {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
 }
