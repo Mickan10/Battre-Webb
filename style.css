@@ -3,28 +3,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 body 
 {
-    display: flex;
-    flex-direction: column;
     background-image: url(photos/bakground1.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    border: 0.5px solid #000000;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Header, logo, meny*/
 header 
 {
     display: flex;
-    background-color: #ffffff8f;
+    background-color: #ffffffb6;
     color: #000000;
     padding: 30px;
     position: fixed;
-    z-index: 1000;
+    z-index: 100;
     width: 100%;
     box-shadow: 0 4px 5px rgb(87, 85, 85);
 }
@@ -39,8 +39,8 @@ header nav ul a
 {
     color: #000000;
     text-decoration: none;
-    margin: 20px;
-    font-size: medium;
+    margin: 30px;
+    font-size: large;
     padding: 10px;
 }
 
@@ -48,13 +48,17 @@ header nav ul a:hover
 {
     background-color: #04172cb2;
     color: white;
+    padding: 10px 30px 10px 30px;
     font-size: large;
-    cursor: pointer;
-    border-radius: 5px;
+    border-radius: 7px;
     box-shadow: 0 4px 5px rgb(87, 85, 85);
+    background-color: #04172cc0; 
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 1s;
 }
 
-/* h4 ska bytas ut mot logo */
+/* h4 ska bytas ut mot logo? */
 h4
 {
     margin-right: 80px;
@@ -64,7 +68,7 @@ h4
 /* main */
 main
 {
-    min-height: 100vh;
+  max-height: 100%;
 }
 
 p
@@ -72,24 +76,58 @@ p
     margin: 6px;
 }
 
-/* textboxar */
+/* textboxar/bild */
 .container 
 { 
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    
 }
 
-/* textbox till vänster */
+/* textbox längst ner */
 .box1
 {
     background-color: #dddbdb79;
     padding: 50px 50px 60px 50px; 
     border-radius: 8px; 
     box-shadow: 0 4px 8px rgba(236, 236, 236, 0.493);
-    max-width: 600px; 
-    margin: 200px 20px 150px 50px;
     line-height: 1.5;
+    margin: 20px 20px 30px 20px;
+    max-width: 90%;
 }
+
+/* bildbox uppe */
+.box2
+{
+    background-color: #dddbdb79;
+    padding: 50px 50px 60px 50px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(236, 236, 236, 0.493);
+    max-width: 90%;
+    margin: 50px 20px 30px 20px;
+    display: flex; /* Added flex display */
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+}
+
+.box2 img
+{
+    height: 290px;
+    width: 300x;
+    align-items: center;
+    border: 0.1px rgb(139, 132, 132) solid;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    margin: 10px;
+}
+
+
+.box2 img:hover
+{
+    transform: scale(1.1);
+}
+
 
 /* knapp till anmälan */
 .button-anmalan 
@@ -107,12 +145,14 @@ p
 {
     background-color: #04172cc0; 
     cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 /*  knapp föreläsare-site eller länka till schema? */
 .button-forelasare 
 {
-    background-color: #3273b852; 
+    background-color: #04172c88; 
     color: white;
     padding: 15px 30px;
     font-size: 20px;
@@ -120,28 +160,30 @@ p
     box-shadow: 1px 0 0 0 rgba(36, 35, 35, 0.493);
 }
 
+/* förvirrande?
 .button-forelasare:hover 
 {
     background-color: #04172c3f; 
     cursor: pointer;
-}
+} */
 
 /* scrollbar */
 .scroll-container 
 {
     display: flex;
     overflow-x: scroll;
-    padding: 20px;
+    padding: 40px;
     background-color: #ffffff6c;
+    margin-bottom: 90px;
 }
 
 .scroll-item 
 {
     display: inline-block;
-    width: 300px;
+    width: 350px;
     margin-right: 17px;
     background-color: #ffffff85;
-    padding: 10px;
+    padding: 15px;
     box-shadow: 0 4px 8px rgba(230, 230, 230, 0.1);
     border-radius: 8px;
 }
@@ -149,8 +191,9 @@ p
 .scroll-item:hover 
 {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .scroll-item img 
