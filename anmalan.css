@@ -3,13 +3,13 @@
 {
     display: flex;
     justify-content: space-between;
-    margin-top: 80px;
+    margin: 40px;
 }
 
 .form-container 
 {
-    background-color: #dddbdb79;
-    max-width: 400px;
+    background-color: #dddbdb93;
+    max-width: 600px;
     margin: 120px 100px;
     padding: 20px;
     border: 1px solid #ccc;
@@ -34,9 +34,8 @@
 
 .container-photos
 {
-    max-width: 400px;
+    max-width: 600px;
     align-items: center;
-    border: 0.1px rgb(139, 132, 132) solid;
     border-radius: 7px;
     transition: transform 0.3s ease;
     margin: 0 300px 20px 0;
@@ -44,9 +43,14 @@
 
 .container-photos img
 {
-    max-width: 100%; /* Bilden skalas till container */
+    max-width: 100%;
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container-photos img:hover
+{
+    transform: scale(1.1);
 }
 
 
