@@ -1,4 +1,11 @@
 
+.container
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
 .form-container 
 {
     background-color: #dddbdb79;
@@ -8,11 +15,6 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(236, 236, 236, 0.493);
-}
-
-.form-group 
-{
-    margin-bottom: 15px;
 }
 
 .form-group label 
@@ -30,7 +32,29 @@
     box-sizing: border-box;
 }
 
-@media only screen and (max-width: 480px) {
+.container-photos
+{
+    max-width: 400px;
+    align-items: center;
+    border: 0.1px rgb(139, 132, 132) solid;
+    border-radius: 7px;
+    transition: transform 0.3s ease;
+    margin: 0 300px 20px 0;
+}
+
+.container-photos img
+{
+    max-width: 100%; /* Bilden skalas till container */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+@media only screen and (max-width: 480px) 
+{
+    .container {
+        flex-direction: column; /* Bild och formulär staplas på små skärmar */
+    }
     .form-container {
         margin: 80px 20px; 
         max-width: 90%; 
@@ -38,12 +62,12 @@
     }
 
     .form-group {
-        margin-bottom: 10px; 
+        margin-bottom: 10px; /* Minskad avstånd mellan formgrupper */
     }
 
     .form-group input[type="text"],
     .form-group input[type="adress"],
     .form-group input[type="email"] {
-        padding: 6px; 
+        padding: 6px; /* Mindre padding i input-fält */
     }
 }
