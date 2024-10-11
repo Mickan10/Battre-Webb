@@ -30,10 +30,27 @@ header
     box-shadow: 0 4px 5px rgb(87, 85, 85);
 }
 
-h2 h3
+h2
 {
     font-size: x-large;
-    
+    transition: background-color 0.3s ease;
+}
+
+h3
+{
+    font-size: large;
+    margin: 0 0px 0 500px;
+    transition: background-color 0.3s ease;
+}
+
+h3:hover
+{
+    background-color: #0d2e6194;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    transform: scale(1.1);
+    transition: 1s;
 }
 
 header nav ul
