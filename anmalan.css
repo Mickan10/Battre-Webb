@@ -8,7 +8,7 @@
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(236, 236, 236, 0.493);
     padding: 40px;
-    margin: 120px 70px 30px 330px;
+    margin: 170px 70px 130px 330px;
 }
 
 /* rubrik */
@@ -29,7 +29,6 @@
     display: block;
     margin: 20px 10px 5px 10px;
 }
-
 .form-group input[type="text"],
 .form-group input[type="email"]
 {
@@ -38,6 +37,7 @@
     cursor: pointer;
 }
 
+/* checkbox */
 .form-group input[type="checkbox"]
 {
     margin: 7px 10px;
@@ -84,24 +84,24 @@
     font-weight: bold;
 }
 
+input:invalid:hover
+{
+    background-color: rgba(201, 107, 107, 0.326);
+    border: rgba(195, 62, 62, 0.763) solid 1px;
+}
+
 @media only screen and (max-width: 480px) 
 {
-    .container {
-        flex-direction: column; 
-    }
     .form-container {
-        margin: 80px 20px; 
+        margin: 120px 20px; 
         max-width: 90%; 
-        padding: 15px; 
-    }
-
-    .form-group {
-        margin-bottom: 10px;
+        padding: 20px; 
     }
 
     .form-group input[type="text"],
     .form-group input[type="adress"],
     .form-group input[type="email"] {
-        padding: 6px; 
+        padding: 10px; 
     }
+
 }
