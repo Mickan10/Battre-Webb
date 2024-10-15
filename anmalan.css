@@ -1,37 +1,50 @@
 
-.anmälan-container
-{
-    display: flex;
-    justify-content: space-between;
-    margin: 10px;
-}
-
+/* Formulär*/
 .form-container 
 {
     background-color: #dddbdb93;
-    max-width: 600px;
-    margin: 120px 100px;
-    padding: 20px;
+    max-width: 900px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(236, 236, 236, 0.493);
+    padding: 40px;
+    margin: 120px 70px 30px 330px;
 }
 
+/* rubrik */
+.form-container h2
+{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.form-container h2:hover
+{
+    border-bottom: #04172cb2 solid 2px;
+    transition: 0.2s;
+}
+
+/* text-block */
 .form-group label 
 {
     display: block;
-    margin-bottom: 5px;
+    margin: 20px 10px 5px 10px;
 }
 
 .form-group input[type="text"],
-.form-group input[type="adress"],
 .form-group input[type="email"]
 {
     width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
+    padding: 10px;
+    cursor: pointer;
 }
 
+.form-group input[type="checkbox"]
+{
+    margin: 7px 10px;
+    transform: scale(1.2);
+}
+
+/*  
 .container-photos
 {
     max-width: 600px;
@@ -52,11 +65,23 @@
 {
     transform: scale(1.1);
 }
+    */
 
 .köp-knapp
 {
-    padding: 30px;
-    margin: 50px;
+    background-color: #04172cb2;
+    color: white;
+    padding: 10px 30px 10px 30px;
+    border-radius: 7px;
+    margin: 10px;
+    box-shadow: 0 4px 5px rgb(87, 85, 85);
+    cursor: pointer;
+}
+
+.köp-knapp p
+{
+    font-size: large;
+    font-weight: bold;
 }
 
 @media only screen and (max-width: 480px) 

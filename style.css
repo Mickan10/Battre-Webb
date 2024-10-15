@@ -11,7 +11,7 @@ body
     background-image: url(photos/bakground1.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
+    height: 50%;
     display: flex;
     flex-direction: column;
     
@@ -23,40 +23,40 @@ header
     display: flex;
     background-color: #ffffffb6;
     color: #000000;
-    padding: 30px;
+    padding: 25px;
     position: fixed;
     z-index: 100;
     width: 100%;
     box-shadow: 0 4px 5px rgb(87, 85, 85);
 }
 
+/* bättre webb*/
 header h2
 {
     font-size: x-large;
 }
 
+/* 18-20 oktober..*/
 header h3
 {
     font-size: large;
-    margin: 0 0px 0 500px;
-    transition: background-color 0.9s ease;
+    margin: 0 0px 0 1150px;
+    position: absolute;
+    transition: border 0.9s ease;
 }
 
 header h3:hover
 {
-    background-color: #0d2e6194;
-    color: #fff;
-    border-radius: 7px;
-    padding: 4px 30px 4px 30px;
-    transform: scale(1.1);
-    transition: 1s;
+    border-bottom: #04172cb2 solid 4px;
+    transition: 0.3s;
 }
 
+/* meny-knappar */
 header nav ul a 
 {
     color: #000000;
     text-decoration: none;
-    margin: 30px;
+    margin: 50px;
     font-size: large;
     padding: 10px;
 }
@@ -65,7 +65,7 @@ header nav ul a:hover
 {
     background-color: #04172cb2;
     color: white;
-    padding: 10px 30px 10px 30px;
+    padding: 10px 40px 10px 40px;
     border-radius: 7px;
     box-shadow: 0 4px 5px rgb(87, 85, 85);
     cursor: pointer;
@@ -76,12 +76,13 @@ header nav ul a:hover
 /* main */
 
 
-/* textboxar/bild */
+/* textboxar/bild (behövs ej?)
 .container 
 { 
     display: flex;
     align-items: center;
 }
+*/
 
 /* textbox längst ner */
 .box1
@@ -91,7 +92,7 @@ header nav ul a:hover
     border-radius: 8px; 
     box-shadow: 0 4px 8px rgba(236, 236, 236, 0.493);
     line-height: 1.9;
-    margin: 20px 20px 30px 20px;
+    margin: 80px 10px 100px 100px;
     max-width: 90%;
 }
 
@@ -108,11 +109,10 @@ header nav ul a:hover
     border-radius: 8px; 
     box-shadow: 0 4px 8px rgba(236, 236, 236, 0.493);
     max-width: 90%;
-    margin: 140px 20px 30px 20px;
-    display: flex; /* Added flex display */
-    flex-wrap: wrap; /* Allows items to wrap to the next line */
-    justify-content: center; /* Centers items horizontally */
-    align-items: center; /* Centers items vertically */
+    margin: 200px 10px 100px 100px;
+    display: flex; 
+    flex-wrap: wrap; 
+    align-items: center; 
 }
 
 .box2 img
@@ -178,6 +178,7 @@ header nav ul a:hover
     padding: 40px;
     background-color: #ffffff6c;
     margin-bottom: 90px;
+    
 }
 
 .scroll-item 

@@ -10,7 +10,7 @@
 </head>
 
 <header>
-    <h4>Bättre Webb / 18-20 Oktober / Göteborg</h4>
+    <h2>Bättre Webb</h2>
     <nav>
         <ul>
             <a href="battrewebb.html">Hem</a>
@@ -18,32 +18,31 @@
             <a href="anmalan.html">Anmälan</a>
         </ul>
     </nav>
+    <h3>18-20 Oktober / Göteborg</h3>
 </header>
 
                     <!--Formulär-->
 <main>
-    <div class="anmälan-container">
-
-        <div class="form-container">
+    <div class="form-container">
             <h2>Anmälan till Bättre Webb</h2>
             <form>
                 <div class="form-group">
-                    <label for="name">Namn:</label>
+                    <label for="name"><strong>Namn:</strong></label>
                     <input type="text" id="name" name="name" required>
                 </div>
                 <div class="form-group">
-                    <label for="adress">Adress:</label>
-                    <input type="adress" id="adress" name="adress" required>
+                    <label for="adress"><strong>Adress:</strong></label>
+                    <input type="text" id="adress" name="adress" required>
                 </div>
                 <div class="form-group">
-                    <label for="email">E-post:</label>
+                    <label for="email"><strong>E-post:</strong></label>
                     <input type="email" id="email" name="email" required>
                 </div>
 
                 <!--FIXA bara välja en box-->
                 <div class="form-group">
-                    <label>(Välj ett alternativ)</label>
-                    <label>Mat:</label>
+                    <label><strong>(Välj ett alternativ)</strong></label>
+                    <label><strong>Mat:</strong></label>
                     <label>
                         <input type="checkbox"  value="Kött"> Kött
                     </label>
@@ -53,33 +52,26 @@
                     <label>
                         <input type="checkbox" value="Vegetariskt"> Vegetariskt
                     </label>
+                    <label for="text">Möjlighet att anmäla allergier:</label>
+                    <input type="text" id="text" name="text">
                 </div>
 
                 <!--FIXA bara välja en box-->
                 <div class="form-group">
-                    <label>(Välj ett alternativ)</label>
-                    <label>Antal dagar:</label>
+                    <label><strong>(Välj ett alternativ)</strong></label>
+                    <label><strong>Antal dagar:</strong></label>
                     <label>
-                        <input type="checkbox" value="1 dag"><p>1 Dag 699kr</p>
+                        <input type="checkbox" value="1 dag">1 Dag 999kr
                     </label>
                     <label>
-                        <input type="checkbox" value="2 dagar"><p>2 Dagar 1400kr</p>
+                        <input type="checkbox" value="2 dagar">2 Dagar 1499kr
                     </label>
                     <label>
-                        <input type="checkbox" value="3 dagar"><p>3 Dagar 2100kr</p>
+                        <input type="checkbox" value="3 dagar">3 Dagar 2499kr
                     </label>
                 </div>
-                <button type="köp-knapp">Köp</button>
+                <button class="köp-knapp"><p>Genomför Köp</p></button>
             </form>
-        </div>
-
-                <!---Box med bilder-->
-                <div class="container-photos">
-                    <img src="photos/91607014-aa11-434d-8046-57d73eb9fac5.webp">
-                    <img src="">
-                    <img src="">
-                </div>
-
     </div>
 </main>
 

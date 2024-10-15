@@ -3,7 +3,9 @@
     max-width: 900px;
     padding: 40px;
     margin: 120px 0px 30px 330px;
+    border-radius: 5px;
     background-color: #dddbdb93;
+    box-shadow: 0 4px 8px rgba(236, 236, 236, 0.493);
 }
 
 .program h1
