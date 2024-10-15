@@ -1,9 +1,9 @@
 
-.container
+.anmälan-container
 {
     display: flex;
     justify-content: space-between;
-    margin: 40px;
+    margin: 10px;
 }
 
 .form-container 
@@ -38,7 +38,7 @@
     align-items: center;
     border-radius: 7px;
     transition: transform 0.3s ease;
-    margin: 0 300px 20px 0;
+    margin: 120px 300px 20px 0;
 }
 
 .container-photos img
@@ -53,11 +53,16 @@
     transform: scale(1.1);
 }
 
+.köp-knapp
+{
+    padding: 30px;
+    margin: 50px;
+}
 
 @media only screen and (max-width: 480px) 
 {
     .container {
-        flex-direction: column; /* Bild och formulär staplas på små skärmar */
+        flex-direction: column; 
     }
     .form-container {
         margin: 80px 20px; 
@@ -66,12 +71,12 @@
     }
 
     .form-group {
-        margin-bottom: 10px; /* Minskad avstånd mellan formgrupper */
+        margin-bottom: 10px;
     }
 
     .form-group input[type="text"],
     .form-group input[type="adress"],
     .form-group input[type="email"] {
-        padding: 6px; /* Mindre padding i input-fält */
+        padding: 6px; 
     }
 }

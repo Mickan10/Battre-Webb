@@ -30,32 +30,26 @@ header
     box-shadow: 0 4px 5px rgb(87, 85, 85);
 }
 
-h2
+header h2
 {
     font-size: x-large;
-    transition: background-color 0.3s ease;
 }
 
-h3
+header h3
 {
     font-size: large;
     margin: 0 0px 0 500px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.9s ease;
 }
 
-h3:hover
+header h3:hover
 {
     background-color: #0d2e6194;
     color: #fff;
-    border-radius: 10px;
-    padding: 10px;
+    border-radius: 7px;
+    padding: 4px 30px 4px 30px;
     transform: scale(1.1);
     transition: 1s;
-}
-
-header nav ul
-{
-    display: inline;
 }
 
 header nav ul a 
@@ -74,7 +68,6 @@ header nav ul a:hover
     padding: 10px 30px 10px 30px;
     border-radius: 7px;
     box-shadow: 0 4px 5px rgb(87, 85, 85);
-    background-color: #04172cc0; 
     cursor: pointer;
     transform: scale(1.1);
     transition: 1s;
@@ -305,15 +298,15 @@ footer
     }
 
     .scroll-item {
-        width: 200px; /* Minska bredden på scroll-items för mobil */
+        width: 200px; 
     }
 
     .scroll-container {
-        padding: 10px; /* Minska padding */
+        padding: 10px; 
     }
 
     .scroll-item img {
-        max-height: 150px; /* Minska höjden på bilderna för mobil */
+        max-height: 150px; 
     }
 
     .footer-column {
