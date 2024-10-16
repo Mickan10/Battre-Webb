@@ -17,11 +17,6 @@
     text-align: center;
     margin-bottom: 40px;
 }
-.form-container h2:hover
-{
-    border-bottom: #04172cb2 solid 2px;
-    transition: 0.2s;
-}
 
 /* text-block */
 .form-group label 
@@ -38,34 +33,11 @@
 }
 
 /* checkbox */
-.form-group input[type="checkbox"]
+.form-group input[type="radio"]
 {
     margin: 7px 10px;
     transform: scale(1.2);
 }
-
-/*  
-.container-photos
-{
-    max-width: 600px;
-    align-items: center;
-    border-radius: 7px;
-    transition: transform 0.3s ease;
-    margin: 120px 300px 20px 0;
-}
-
-.container-photos img
-{
-    max-width: 100%;
-    border-radius: 5px;
-    box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.container-photos img:hover
-{
-    transform: scale(1.1);
-}
-    */
 
 .köp-knapp
 {
@@ -84,23 +56,31 @@
     font-weight: bold;
 }
 
-input:invalid:hover
+/* röd bakgrund om man inte fyllt i fälten */ 
+input:invalid
 {
-    background-color: rgba(201, 107, 107, 0.326);
-    border: rgba(195, 62, 62, 0.763) solid 1px;
+    background-color: rgba(246, 228, 228, 0.763);
+}
+
+/* "normal" bakgrund om man fyllt i korrekt*/
+for:valid
+{
+    background-color: rgba(214, 253, 225, 0.41);
 }
 
 @media only screen and (max-width: 480px) 
 {
-    .form-container {
-        margin: 120px 20px; 
-        max-width: 90%; 
-        padding: 20px; 
+    .form-container 
+    {
+        margin: 180px 20px; 
+        max-width: 100%; 
+        padding: 10px; 
     }
 
     .form-group input[type="text"],
     .form-group input[type="adress"],
-    .form-group input[type="email"] {
+    .form-group input[type="email"] 
+    {
         padding: 10px; 
     }
 
