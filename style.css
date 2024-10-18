@@ -308,9 +308,15 @@ footer
         margin: 0px 0px 0px 0px;  
     }
 
-    .box1, .box2
+    .box1
     {
-        margin: 170px auto;
+        margin: 50px auto 50px auto;
+        padding: 15px;
+    }
+
+    .box2
+    {
+        margin: 170px auto 10px auto;
         padding: 15px;
     }
 
@@ -320,7 +326,7 @@ footer
         margin: 10px auto;
     }
 
-    .button-anmalan, .button-forelasare 
+    .button-anmalan, .button-forelasare .button-program
     {
         padding: 10px 30px;
         font-size: 16px;
@@ -334,7 +340,7 @@ footer
     .footer-column 
     {
         width: 100%; 
-        margin-bottom: 20px;
+        margin-bottom: 40px;
         text-align: center;
     }
 
