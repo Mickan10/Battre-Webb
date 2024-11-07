@@ -2,13 +2,16 @@
 /* Formulär*/
 .form-container 
 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
     background-color: #dddbdb93;
-    max-width: 900px;
+    max-width: 500px;
+    min-height: 100vh;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(236, 236, 236, 0.493);
-    padding: 40px;
-    margin: 170px 70px 130px 330px;
 }
 
 /* rubrik */
@@ -73,9 +76,13 @@ for:valid
 {
     .form-container 
     {
-        margin: 180px auto 50px auto; 
-        max-width: 100%; 
-        padding: 10px; 
+        padding: 10px;
+        max-width: 100%;
+        margin-top: 170px;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .form-group input[type="text"],
@@ -85,4 +92,25 @@ for:valid
         padding: 10px; 
     }
 
+}
+
+@media only screen and (min-width: 1024px)
+{
+    
+    .form-container 
+    { 
+        margin: auto;
+        max-width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="adress"],
+    .form-group input[type="email"] 
+    {
+        padding: 10px;
+        width: 100%;
+    }
 }

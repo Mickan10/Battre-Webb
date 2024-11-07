@@ -1,5 +1,4 @@
 
-
 .program 
 {
     max-width: 900px;
@@ -10,7 +9,7 @@
     box-shadow: 0 4px 8px rgba(236, 236, 236, 0.493);
 }
 
-/* programschema - effekt?*/
+/* programschema*/
 .program h1
 {
     text-align: center;
@@ -54,6 +53,45 @@
         margin: 170px auto 50px auto; 
         max-width: 90%; 
         padding: 20px; 
+    }
+
+    .program h1
+    {
+        font-size: 20px;
+    }
+
+    .dag h3 
+    {
+        margin: 20px;
+        font-size: 19px;
+    }
+
+    .event 
+    {
+        padding: 8px; 
+        margin-bottom: 8px; 
+        font-size: 14px; 
+    }
+
+    .event:hover
+    {
+        transform: scale(1.05); 
+        transition: transform 0.5s ease; 
+    }
+}
+
+@media only screen and (min-width: 1024px) 
+{
+    .body
+    {
+        align-items: center;
+        justify-content: center;
+    }
+    .program 
+    {
+        max-width: 70%; 
+        padding: 20px;
+        margin: 50px;
     }
 
     .program h1
