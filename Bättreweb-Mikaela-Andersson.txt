@@ -2,3 +2,7 @@ Bättre Webb - Mikaela Andersson
 
 git repo: https://github.com/Mickan10/Battre-Webb.git
 publicerade sida: https://mickan10.github.io/Battre-Webb/
+
+Jag har haft code review bara på lektionstillfällen.
+Har inte fått så mycket feedback då sidan ej var klar vid tillfällena. 
+Men ändrade en linje som jag fick höra kunde göra så en rubrik misstogs för en knapp. 
